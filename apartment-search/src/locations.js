@@ -1,0 +1,53 @@
+// src/locations.js
+const locations = [
+  { region: "Gorenjska", city: "Jesenice", administrativeUnit: "Občina Jesenice", zip: "4270" },
+  { region: "Gorenjska", city: "Kranj", administrativeUnit: "Mestna občina Kranj", zip: "4000" },
+  { region: "Gorenjska", city: "Škofja Loka", administrativeUnit: "Občina Škofja Loka", zip: "4220" },
+  { region: "Gorenjska", city: "Bled", administrativeUnit: "Občina Bled", zip: "4260" },
+  { region: "Gorenjska", city: "Radovljica", administrativeUnit: "Občina Radovljica", zip: "4240" },
+  { region: "Gorenjska", city: "Tržič", administrativeUnit: "Občina Tržič", zip: "4290" },
+  { region: "Gorenjska", city: "Bohinj", administrativeUnit: "Občina Bohinj", zip: "4264" },
+  { region: "Gorenjska", city: "Cerklje na Gorenjskem", administrativeUnit: "Občina Cerklje na Gorenjskem", zip: "4207" },
+  { region: "Gorenjska", city: "Jezersko", administrativeUnit: "Občina Jezersko", zip: "4206" },
+  { region: "Gorenjska", city: "Naklo", administrativeUnit: "Občina Naklo", zip: "4202" },
+  { region: "Gorenjska", city: "Preddvor", administrativeUnit: "Občina Preddvor", zip: "4205" },
+  { region: "Gorenjska", city: "Železniki", administrativeUnit: "Občina Železniki", zip: "4228" },
+  { region: "Gorenjska", city: "Žiri", administrativeUnit: "Občina Žiri", zip: "4226" },
+  { region: "Gorenjska", city: "Gorje", administrativeUnit: "Občina Gorje", zip: "4247" },
+  { region: "Gorenjska", city: "Kranjska Gora", administrativeUnit: "Občina Kranjska Gora", zip: "4280" },
+
+  { region: "Osrednjeslovenska", city: "Ljubljana", administrativeUnit: "Mestna občina Ljubljana", zip: "1000" },
+  { region: "Osrednjeslovenska", city: "Domžale", administrativeUnit: "Občina Domžale", zip: "1230" },
+  { region: "Osrednjeslovenska", city: "Kamnik", administrativeUnit: "Občina Kamnik", zip: "1241" },
+  { region: "Osrednjeslovenska", city: "Medvode", administrativeUnit: "Občina Medvode", zip: "1215" },
+  { region: "Osrednjeslovenska", city: "Trzin", administrativeUnit: "Občina Trzin", zip: "1236" },
+  { region: "Osrednjeslovenska", city: "Komenda", administrativeUnit: "Občina Komenda", zip: "1218" },
+  { region: "Osrednjeslovenska", city: "Mengeš", administrativeUnit: "Občina Mengeš", zip: "1234" },
+  { region: "Osrednjeslovenska", city: "Dol pri Ljubljani", administrativeUnit: "Občina Dol pri Ljubljani", zip: "1262" },
+  { region: "Osrednjeslovenska", city: "Horjul", administrativeUnit: "Občina Horjul", zip: "1354" },
+  { region: "Osrednjeslovenska", city: "Logatec", administrativeUnit: "Občina Logatec", zip: "1370" },
+  { region: "Osrednjeslovenska", city: "Lukovica", administrativeUnit: "Občina Lukovica", zip: "1225" },
+  { region: "Osrednjeslovenska", city: "Moravče", administrativeUnit: "Občina Moravče", zip: "1251" },
+  { region: "Osrednjeslovenska", city: "Škofljica", administrativeUnit: "Občina Škofljica", zip: "1291" },
+  { region: "Osrednjeslovenska", city: "Velike Lašče", administrativeUnit: "Občina Velike Lašče", zip: "1315" },
+
+  { region: "Podravska", city: "Maribor", administrativeUnit: "Mestna občina Maribor", zip: "2000" },
+  { region: "Podravska", city: "Ptuj", administrativeUnit: "Mestna občina Ptuj", zip: "2250" },
+  { region: "Podravska", city: "Ormož", administrativeUnit: "Občina Ormož", zip: "2270" },
+  { region: "Podravska", city: "Lenart", administrativeUnit: "Občina Lenart", zip: "2230" },
+  { region: "Podravska", city: "Ruše", administrativeUnit: "Občina Ruše", zip: "2342" },
+  { region: "Podravska", city: "Pesnica", administrativeUnit: "Občina Pesnica", zip: "2211" },
+  { region: "Podravska", city: "Slovenska Bistrica", administrativeUnit: "Občina Slovenska Bistrica", zip: "2310" },
+  { region: "Podravska", city: "Rače-Fram", administrativeUnit: "Občina Rače-Fram", zip: "2327" },
+  { region: "Podravska", city: "Starše", administrativeUnit: "Občina Starše", zip: "2205" },
+  { region: "Podravska", city: "Kidričevo", administrativeUnit: "Občina Kidričevo", zip: "2325" },
+  { region: "Podravska", city: "Hajdina", administrativeUnit: "Občina Hajdina", zip: "2288" },
+  { region: "Podravska", city: "Markovci", administrativeUnit: "Občina Markovci", zip: "2281" },
+  { region: "Podravska", city: "Majšperk", administrativeUnit: "Občina Majšperk", zip: "2322" },
+  { region: "Podravska", city: "Duplek", administrativeUnit: "Občina Duplek", zip: "2241" },
+  { region: "Podravska", city: "Šentilj", administrativeUnit: "Občina Šentilj", zip: "2212" },
+  
+  // ... continue adding other regions, cities, and administrative units.
+];
+
+export default locations;
