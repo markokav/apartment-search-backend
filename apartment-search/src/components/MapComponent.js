@@ -1,26 +1,26 @@
 import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
-const containerStyle = {
-  width: '100%',
-  height: '400px'
+const mapContainerStyle = {
+  height: '100%',
+  width: '100%'
 };
 
-const center = {
-  lat: 46.056946,
-  lng: 14.505751
+const defaultCenter = {
+  lat: 46.056946, // Default center latitude for Ljubljana, Slovenia
+  lng: 14.505751 // Default center longitude for Ljubljana, Slovenia
 };
 
 const MapComponent = ({ properties }) => {
   return (
     <LoadScript googleMapsApiKey="AIzaSyBsEAyh-V2gg22__QHvcXg6p8VgWSxbiX8">
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-      >
-        {properties.map((property) => (
-          <Marker key={property.id} position={{ lat: property.lat, lng: property.lng }} />
+      <GoogleMap mapContainerStyle={mapContainerStyle} center={defaultCenter} zoom={10}>
+        {properties.map((property, index) => (
+          <Marker 
+            key={index} 
+            position={{ lat: property.lat, lng: property.lng }} 
+            title={property.title} 
+          />
         ))}
       </GoogleMap>
     </LoadScript>

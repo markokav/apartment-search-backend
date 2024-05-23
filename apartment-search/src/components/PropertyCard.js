@@ -1,39 +1,19 @@
 import React from 'react';
-import { Card, CardContent, Typography, Box } from '@mui/material';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './PropertyCard.css';
 
 const PropertyCard = ({ property }) => {
   return (
-    <Card>
-      <Carousel showThumbs={false} infiniteLoop useKeyboardArrows autoPlay>
-        {property.images.map((image, index) => (
-          <div key={index} className="carousel-image-container">
-            <img src={image} alt={`${property.title} - ${index}`} className="carousel-image" />
-          </div>
-        ))}
-      </Carousel>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {property.title}
-        </Typography>
-        <Typography variant="body2" color="textSecondary">
-          {property.description}
-        </Typography>
-        <Box mt={2}>
-          <Typography variant="body1">
-            Price: ${property.price}
-          </Typography>
-          <Typography variant="body1">
-            Bedrooms: {property.bedrooms}
-          </Typography>
-          <Typography variant="body1">
-            Address: {property.location}
-          </Typography>
-        </Box>
-      </CardContent>
-    </Card>
+    <div className="property-card">
+      <img src={property.image} alt={property.title} />
+      <h2>{property.title}</h2>
+      <p>{property.description}</p>
+      <p>Price: {property.price} EUR</p>
+      <p>Bedrooms: {property.bedrooms}</p>
+      <p>Distance to Post Office: {property.distanceToPostOffice}</p>
+      <p>Distance to Kindergarten: {property.distanceToKindergarten}</p>
+      <p>Distance to School: {property.distanceToSchool}</p>
+      <p>Distance to Bus Station: {property.distanceToBusStation}</p>
+    </div>
   );
 };
 

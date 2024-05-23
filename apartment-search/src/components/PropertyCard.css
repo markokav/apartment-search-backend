@@ -1,15 +1,24 @@
-.carousel-image-container {
-  width: 100%;
-  height: 300px; /* Set the desired height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+.property-card {
+  width: 30%;
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
-.carousel-image {
+.property-card img {
   width: 100%;
   height: auto;
-  object-fit: cover;
-  max-height: 100%;
+  border-radius: 8px;
+}
+
+.property-card h2 {
+  margin: 10px 0 5px;
+}
+
+.property-card p {
+  margin: 5px 0;
 }
